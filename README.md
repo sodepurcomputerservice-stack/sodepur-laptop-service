@@ -1,1 +1,0 @@
-# sodepur-laptop-service
