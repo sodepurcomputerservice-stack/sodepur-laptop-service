@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sodepur Laptop & Computer Service — Expert Laptop Repair in Kolkata</title>
+<meta name="description" content="Sodepur Laptop & Computer Service — Trusted laptop repair center in Kolkata for Dell, HP, Lenovo, MSI, Acer, Asus, MacBook & Data Recovery. 4.9★ rated." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0f;
+    --bg-2:#11111a;
+    --surface:#161622;
+    --surface-2:#1d1d2c;
+    --border:rgba(255,255,255,.08);
+    --text:#f5f5f7;
+    --muted:#a0a0b0;
+    --primary:#ff5b1f;
+    --primary-2:#ffb800;
+    --accent:#22c55e;
+    --grad: linear-gradient(135deg,#ff5b1f 0%,#ffb800 100%);
+    --radius:16px;
+    --shadow:0 20px 60px -20px rgba(255,91,31,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-.02em;line-height:1.15}
+  h1{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:800}
+  h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:700;margin-bottom:.6rem}
+  h3{font-size:1.2rem;font-weight:700}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--primary-2);padding:8px 14px;border:1px solid rgba(255,184,0,.25);border-radius:999px;background:rgba(255,184,0,.06)}
+  .muted{color:var(--muted)}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(14px);background:rgba(10,10,15,.75);border-bottom:1px solid var(--border)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{width:42px;height:42px;border-radius:10px;background:#fff;padding:4px;object-fit:contain}
+  .brand-text{display:flex;flex-direction:column;line-height:1.1}
+  .brand-text strong{font-size:.95rem;letter-spacing:.02em}
+  .brand-text span{font-size:.7rem;color:var(--muted)}
+  .nav-links{display:flex;gap:28px}
+  .nav-links a{font-size:.92rem;color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--grad);color:#0a0a0f;font-weight:700;font-size:.88rem;box-shadow:var(--shadow)}
+  @media(max-width:880px){.nav-links{display:none}}
+
+  /* PREMIUM BANNER */
+  .premium-banner {
+    text-align: center;
+    margin: 0 auto 50px;
+    padding: 35px 25px;
+    background: linear-gradient(180deg, rgba(22,22,34,0.8), rgba(17,17,26,0.6));
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 50px -10px rgba(255,91,31,0.25), inset 0 0 0 1px rgba(255,255,255,0.05);
+    position: relative;
+    z-index: 10;
+  }
+  .premium-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: var(--grad);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.6;
+  }
+  .pb-title {
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 4vw, 2.6rem);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .pb-desc {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .pb-brands {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--primary-2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    background: rgba(255,184,0,0.1);
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,184,0,0.25);
+  }
+
+  /* HERO */
+  .hero{position:relative;padding:60px 0 60px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(900px 500px at 80% -10%,rgba(255,91,31,.18),transparent 60%),
+    radial-gradient(700px 400px at 10% 30%,rgba(255,184,0,.10),transparent 60%);
+    pointer-events:none}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;position:relative}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+  .rating-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border:1px solid var(--border);padding:8px 14px;border-radius:999px;font-size:.82rem;margin-bottom:18px}
+  .stars{color:#ffb800;letter-spacing:2px;font-size:.9rem}
+  .hero h1{margin:8px 0 18px}
+  .hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lede{font-size:1.1rem;color:var(--muted);max-width:560px;margin-bottom:28px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:12px;font-weight:700;font-size:.95rem;transition:transform .15s,box-shadow .2s;cursor:pointer;border:none}
+  .btn-primary{background:var(--grad);color:#0a0a0f;box-shadow:var(--shadow)}
+  .btn-primary:hover{transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+  .btn-ghost:hover{background:var(--surface)}
+  .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:520px}
+  .stat .n{font-family:'Space Grotesk';font-size:1.9rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .l{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;margin-top:4px}
+
+  .hero-visual{position:relative}
+  .hero-card{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--border);background:var(--surface);aspect-ratio:4/5;background-image:linear-gradient(135deg,rgba(255,91,31,.15),rgba(255,184,0,.08)),url('https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&q=80');background-size:cover;background-position:center}
+  .float-badge{position:absolute;background:var(--surface-2);border:1px solid var(--border);padding:14px 18px;border-radius:14px;display:flex;align-items:center;gap:12px;backdrop-filter:blur(8px)}
+  .float-badge .icon{width:38px;height:38px;border-radius:10px;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#0a0a0f;font-weight:800}
+  .float-badge strong{font-size:.9rem;display:block}
+  .float-badge span{font-size:.74rem;color:var(--muted)}
+  .fb-1{bottom:24px;left:-20px}
+  .fb-2{top:24px;right:-20px}
+  @media(max-width:600px){.fb-1,.fb-2{position:static;margin:10px 0}}
+
+  /* MARQUEE */
+  .marquee{margin-top:30px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-2);overflow:hidden;padding:16px 0}
+  .marquee-track{display:flex;gap:50px;white-space:nowrap;animation:scroll 32s linear infinite;color:var(--muted);font-size:.9rem;font-weight:500}
+  .marquee-track span{display:inline-flex;align-items:center;gap:10px}
+  .marquee-track .dot{width:5px;height:5px;border-radius:50%;background:var(--primary)}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* SECTIONS */
+  section{padding:90px 0}
+  .section-head{text-align:center;max-width:680px;margin:0 auto 50px}
+  .section-head p{color:var(--muted);margin-top:10px}
+
+  /* SERVICES */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.grid-3{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:transform .2s,border-color .2s,background .2s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(255,91,31,.35);background:var(--surface-2)}
+  .card .icon-wrap{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,rgba(255,91,31,.18),rgba(255,184,0,.12));display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+  .card h3{margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.94rem;margin-bottom:14px}
+  .card ul{list-style:none;font-size:.85rem;color:var(--muted)}
+  .card ul li{padding:4px 0;display:flex;align-items:center;gap:8px}
+  .card ul li::before{content:"✓";color:var(--accent);font-weight:700}
+
+  /* AMC */
+  .amc{background:linear-gradient(135deg,#181826,#0f0f18);border:1px solid var(--border);border-radius:24px;padding:50px;position:relative;overflow:hidden}
+  .amc::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,91,31,.2),transparent 70%);border-radius:50%}
+  .amc-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+  @media(max-width:800px){.amc-grid{grid-template-columns:1fr}.amc{padding:32px}}
+  .amc h2{margin-bottom:16px}
+  .amc h2 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .amc-features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+  .amc-feat{display:flex;gap:10px;align-items:flex-start;font-size:.9rem}
+  .amc-feat .tick{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--grad);color:#0a0a0f;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.75rem}
+  .amc-card{background:var(--surface-2);border:1px solid var(--border);border-radius:18px;padding:28px;text-align:center}
+  .amc-card .price{font-family:'Space Grotesk';font-size:2.3rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .amc-card .price-l{color:var(--muted);font-size:.85rem;margin-bottom:18px}
+
+  /* BRANDS */
+  .brands-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:16px}
+  @media(max-width:900px){.brands-grid{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:500px){.brands-grid{grid-template-columns:repeat(3,1fr)}}
+  .brand-tile{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px 12px;text-align:center;transition:all .2s}
+  .brand-tile:hover{background:var(--surface-2);border-color:rgba(255,91,31,.35);transform:translateY(-3px)}
+  .brand-tile img{width:36px;height:36px;margin:0 auto 10px;filter:invert(1) brightness(1.1)}
+  .brand-tile span{font-size:.78rem;color:var(--muted);font-weight:600}
+
+  /* PROCESS */
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  @media(max-width:800px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:500px){.process-grid{grid-template-columns:1fr}}
+  .step{position:relative;padding:28px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+  .step .num{font-family:'Space Grotesk';font-size:2.4rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;margin-bottom:14px}
+  .step p{color:var(--muted);font-size:.9rem;margin-top:6px}
+
+  /* WHY */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:500px){.why-grid{grid-template-columns:1fr}}
+  .why-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:left}
+  .why-card .ico{font-size:1.6rem;margin-bottom:12px}
+  .why-card p{color:var(--muted);font-size:.85rem;margin-top:4px}
+
+  /* REVIEWS */
+  .reviews-head{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:10px}
+  .big-rating{font-family:'Space Grotesk';font-size:3rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+  .grid-3 .review p.quote{color:var(--text);font-size:.95rem;font-style:italic;margin:14px 0 18px}
+  .reviewer{display:flex;align-items:center;gap:12px}
+  .avatar{width:42px;height:42px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#0a0a0f;font-weight:800}
+  .reviewer .meta strong{font-size:.92rem;display:block}
+  .reviewer .meta span{font-size:.75rem;color:var(--muted)}
+
+  /* FAQ */
+  .faq-list{max-width:780px;margin:0 auto}
+  details{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;padding:18px 22px;cursor:pointer}
+  details[open]{background:var(--surface-2);border-color:rgba(255,91,31,.3)}
+  summary{font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;color:var(--primary-2);transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin-top:12px;color:var(--muted);font-size:.92rem}
+
+  /* CONTACT */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  @media(max-width:800px){.contact-grid{grid-template-columns:1fr}}
+  .contact-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:32px}
+  .contact-row{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--border)}
+  .contact-row:last-child{border-bottom:none}
+  .contact-row .ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,rgba(255,91,31,.18),rgba(255,184,0,.12));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+  .contact-row strong{display:block;font-size:.95rem}
+  .contact-row span{font-size:.85rem;color:var(--muted)}
+
+  /* CTA BAND */
+  .cta-band{background:var(--grad);color:#0a0a0f;text-align:center;padding:60px 20px;border-radius:24px;margin:0 20px}
+  .cta-band h2{color:#0a0a0f;margin-bottom:10px}
+  .cta-band p{margin-bottom:24px;font-weight:500}
+  .cta-band .btn{background:#0a0a0f;color:#fff}
+
+  /* FOOTER */
+  footer{background:#06060a;padding:60px 0 30px;border-top:1px solid var(--border);margin-top:80px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  @media(max-width:800px){.foot-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:500px){.foot-grid{grid-template-columns:1fr}}
+  .foot-col h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.15em;color:var(--primary-2);margin-bottom:18px;font-family:'Inter'}
+  .foot-col ul{list-style:none}
+  .foot-col ul li{padding:5px 0}
+  .foot-col a{color:var(--muted);font-size:.9rem;transition:color .2s}
+  .foot-col a:hover{color:var(--text)}
+  .foot-brand p{color:var(--muted);font-size:.88rem;margin:14px 0}
+  .foot-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:.82rem}
+
+  /* FLOATING BUTTONS */
+  .float-actions{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:12px;z-index:100}
+  .fab{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:transform .2s;cursor:pointer}
+  .fab:hover{transform:scale(1.08)}
+  .fab svg{width:28px;height:28px}
+  .fab-wa{background:#25D366}
+  .fab-call{background:var(--grad)}
+
+  /* SCROLL ANIMATION */
+  .reveal{opacity:0;transform:translateY(20px);transition:all .7s ease-out}
+  .reveal.in{opacity:1;transform:none}
+
+  /* === PREMIUM UPGRADES === */
+  /* Animated aurora background across entire page */
+  body::before{
+    content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(600px 400px at 15% 20%, rgba(255,91,31,.12), transparent 60%),
+      radial-gradient(700px 500px at 85% 70%, rgba(255,184,0,.10), transparent 60%),
+      radial-gradient(500px 400px at 50% 100%, rgba(34,197,94,.07), transparent 60%);
+    filter:blur(40px);
+    animation:auroraShift 18s ease-in-out infinite alternate;
+  }
+  @keyframes auroraShift{
+    0%{transform:translate(0,0) scale(1)}
+    50%{transform:translate(40px,-30px) scale(1.05)}
+    100%{transform:translate(-30px,40px) scale(1.1)}
+  }
+  /* Subtle grid texture */
+  body::after{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.4;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size:48px 48px;
+    mask-image:radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  }
+
+  /* Glassy nav */
+  .nav{background:rgba(10,10,15,.6);border-bottom:1px solid rgba(255,91,31,.12)}
+  .nav-cta{position:relative;overflow:hidden}
+  .nav-cta::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);
+    transform:translateX(-120%);animation:shine 3.5s ease-in-out infinite;
+  }
+  @keyframes shine{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+
+  /* Hero card — Ken Burns moving image + glow ring */
+  .hero-card{
+    box-shadow:0 30px 80px -20px rgba(255,91,31,.45), 0 0 0 1px rgba(255,184,0,.15) inset;
+    animation:kenburns 18s ease-in-out infinite alternate, float 6s ease-in-out infinite;
+  }
+  @keyframes kenburns{
+    0%{background-size:110%;background-position:center}
+    100%{background-size:130%;background-position:55% 45%}
+  }
+  @keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-12px)}
+  }
+  .hero-card::after{
+    content:"";position:absolute;inset:0;border-radius:24px;pointer-events:none;
+    background:linear-gradient(180deg,transparent 50%,rgba(10,10,15,.7) 100%);
+  }
+  .float-badge{box-shadow:0 12px 40px rgba(0,0,0,.5);animation:float 5s ease-in-out infinite}
+  .fb-2{animation-delay:-2.5s}
+
+  /* Gradient border cards with shimmer on hover */
+  .card{position:relative;background:linear-gradient(180deg,#181826,#11111a)}
+  .card::before{
+    content:"";position:absolute;inset:0;border-radius:var(--radius);padding:1px;
+    background:linear-gradient(135deg,rgba(255,91,31,.4),rgba(255,184,0,.15) 50%,transparent);
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;
+  }
+  .card:hover::before{opacity:1}
+  .card .icon-wrap{box-shadow:0 8px 24px rgba(255,91,31,.25) inset; animation:pulseGlow 3s ease-in-out infinite}
+  @keyframes pulseGlow{
+    0%,100%{box-shadow:0 8px 24px rgba(255,91,31,.2) inset, 0 0 0 0 rgba(255,91,31,0)}
+    50%{box-shadow:0 8px 24px rgba(255,91,31,.35) inset, 0 0 24px 4px rgba(255,91,31,.18)}
+  }
+
+  /* AMC premium glow */
+  .amc{box-shadow:0 40px 120px -40px rgba(255,91,31,.4)}
+  .amc::after{
+    content:"";position:absolute;bottom:-150px;left:-100px;width:400px;height:400px;
+    background:radial-gradient(circle,rgba(255,184,0,.18),transparent 70%);border-radius:50%;
+    animation:auroraShift 14s ease-in-out infinite alternate;
+  }
+  .amc-card{box-shadow:0 20px 60px -20px rgba(0,0,0,.6), 0 0 0 1px rgba(255,184,0,.15)}
+  .amc-card .price{animation:pulseText 3s ease-in-out infinite}
+  @keyframes pulseText{0%,100%{filter:drop-shadow(0 0 8px rgba(255,184,0,.4))}50%{filter:drop-shadow(0 0 18px rgba(255,91,31,.6))}}
+
+  /* Brand tiles — shimmer sweep */
+  .brand-tile{position:relative;overflow:hidden;background:linear-gradient(180deg,#181826,#11111a)}
+  .brand-tile::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.06) 50%,transparent 65%);
+    transform:translateX(-120%);transition:transform .8s;
+  }
+  .brand-tile:hover::after{transform:translateX(120%)}
+
+  /* Stat numbers shimmer */
+  .stat .n, .big-rating, .amc-card .price, .hero h1 .grad, h2 .grad{
+    background-size:200% auto;animation:gradShift 5s ease infinite;
+  }
+  @keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+  /* CTA band — animated gradient + sheen */
+  .cta-band{background:linear-gradient(120deg,#ff5b1f,#ffb800,#ff5b1f);background-size:200% 200%;animation:gradShift 6s ease infinite;position:relative;overflow:hidden;box-shadow:0 30px 80px -20px rgba(255,91,31,.5)}
+
+  /* Buttons — glow pulse */
+  .btn-primary{position:relative;overflow:hidden}
+  .btn-primary::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);
+    transform:translateX(-120%);animation:shine 4s ease-in-out infinite;
+  }
+
+  /* FAB pulsing rings */
+  .fab-wa{box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:ring 2s ease-out infinite}
+  .fab-call{animation:ring 2s ease-out infinite .8s}
+  @keyframes ring{
+    0%{box-shadow:0 0 0 0 rgba(255,91,31,.6)}
+    70%{box-shadow:0 0 0 18px rgba(255,91,31,0)}
+    100%{box-shadow:0 0 0 0 rgba(255,91,31,0)}
+  }
+  .fab-wa{animation-name:ringGreen}
+  @keyframes ringGreen{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}
+    70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
+  }
+
+  /* Brand text in nav — refined typography */
+  .brand-text strong{font-size:.78rem;letter-spacing:.08em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .brand-text span{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}
+
+  /* Smoother section transitions */
+  section{position:relative}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <img src="https://drive.google.com/thumbnail?id=19gQAk4Negz0nbEzm_eZZN7w6jiLEhhKB&sz=w200" alt="Sodepur Laptop & Computer Service logo" onerror="this.src='https://lh3.googleusercontent.com/d/19gQAk4Negz0nbEzm_eZZN7w6jiLEhhKB=w200'">
+      <div class="brand-text">
+        <strong>SODEPUR LAPTOP</strong>
+        <span>& COMPUTER SERVICE</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#amc">AMC</a>
+      <a href="#brands">Brands</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="tel:+918910244177" class="nav-cta">📞 Call Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <div class="premium-banner reveal">
+      <h2 class="pb-title"><span class="grad">SODEPUR LAPTOP & COMPUTER SERVICE</span></h2>
+      <p class="pb-desc">Laptop Repair Service Center for Dell, HP, Lenovo, MSI, Acer, Asus, Macbook & Data Recovery</p>
+      <div class="pb-brands">✓ We provide service for all these brands.</div>
+    </div>
+  </div>
+
+  <div class="container hero-grid">
+    <div>
+      <div class="rating-pill">
+        <span class="stars">★★★★★</span>
+        <strong>4.9/5</strong> on Google · 500+ Reviews
+      </div>
+      <div style="margin:14px 0"><span class="eyebrow">Sodepur · Kolkata · 24 hours open all 7 days</span></div>
+      <h1>Laptop Trouble? <span class="grad">Fixed Fast,</span> Done Right.</h1>
+      <p class="lede">Trusted expert repair for Dell, HP, Lenovo, MSI, Acer, Asus & MacBook — plus professional Data Recovery. Genuine parts, transparent pricing, and warranty on every repair.</p>
+      <div class="cta-row">
+        <a href="https://wa.me/918910244177?text=Hi%2C%20I%20need%20laptop%20repair%20help" target="_blank" class="btn btn-primary">💬 Chat on WhatsApp</a>
+        <a href="tel:+918910244177" class="btn btn-ghost">📞 +91 89102 44177</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="n">10+</div><div class="l">Years Exp.</div></div>
+        <div class="stat"><div class="n">15K+</div><div class="l">Repairs Done</div></div>
+        <div class="stat"><div class="n">4.9★</div><div class="l">Google Rating</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card"></div>
+      <div class="float-badge fb-1">
+        <div class="icon">✓</div>
+        <div><strong>No Fix, No Fee</strong><span>Honest diagnosis</span></div>
+      </div>
+      <div class="float-badge fb-2">
+        <div class="icon">⚡</div>
+        <div><strong>Same-Day Service</strong><span>Most repairs</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>⚡ Same-Day Repair</span><span class="dot"></span>
+    <span>✓ Genuine Spare Parts</span><span class="dot"></span>
+    <span>🔧 10+ Years Expertise</span><span class="dot"></span>
+    <span>💾 Data Recovery Specialist</span><span class="dot"></span>
+    <span>⭐ 4.9 Star Google Rating</span><span class="dot"></span>
+    <span>🛡️ Repair Warranty</span><span class="dot"></span>
+    <span>⚡ Same-Day Repair</span><span class="dot"></span>
+    <span>✓ Genuine Spare Parts</span><span class="dot"></span>
+    <span>🔧 10+ Years Expertise</span><span class="dot"></span>
+    <span>💾 Data Recovery Specialist</span><span class="dot"></span>
+    <span>⭐ 4.9 Star Google Rating</span><span class="dot"></span>
+    <span>🛡️ Repair Warranty</span><span class="dot"></span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Fix</span>
+      <h2 style="margin-top:14px">Complete Laptop & Computer Repair</h2>
+      <p>Hardware, software, screen, board, battery, or data — one trusted workshop for everything.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal"><div class="icon-wrap">🖥️</div><h3>Laptop Screen Replacement</h3><p>Cracked, flickering, or dead display? We replace LED, IPS, OLED & touch panels with genuine matching parts.</p><ul><li>All sizes & brands</li><li>Same-day fitting</li><li>3-month warranty</li></ul></div>
+      <div class="card reveal"><div class="icon-wrap">🔧</div><h3>Motherboard Repair</h3><p>Chip-level motherboard diagnosis and repair — liquid damage, no-power, short-circuit and BGA work.</p><ul><li>Component-level repair</li><li>Liquid damage recovery</li><li>BGA reballing</li></ul></div>
+      <div class="card reveal"><div class="icon-wrap">💾</div><h3>Data Recovery</h3><p>Recover lost files from crashed HDDs, dead SSDs, formatted drives, and corrupted partitions.</p><ul><li>HDD / SSD / Pen drive</li><li>Logical & physical recovery</li><li>No data — no charge</li></ul></div>
+      <div class="card reveal"><div class="icon-wrap">⌨️</div><h3>Keyboard & Battery</h3><p>Replacement of full keyboards, individual keys, batteries and charging issues for every model.</p><ul><li>Original batteries</li><li>Backlit keyboards</li><li>Hinge repair</li></ul></div>
+      <div class="card reveal"><div class="icon-wrap">🍎</div><h3>MacBook Service</h3><p>Specialised MacBook Air & Pro repair — logic board, Retina display, battery and SSD upgrades.</p><ul><li>All MacBook models</li><li>Logic board repair</li><li>SSD upgrades</li></ul></div>
+      <div class="card reveal"><div class="icon-wrap">🛠️</div><h3>Software & OS Setup</h3><p>Windows / macOS install, virus removal, slow-performance tune-up, and driver troubleshooting.</p><ul><li>Genuine OS install</li><li>Virus & malware removal</li><li>Speed optimisation</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="brands" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Brands We Service</span>
+      <h2 style="margin-top:14px">Expert Repair for Every Major Brand</h2>
+      <p>Certified technicians experienced across every popular laptop manufacturer.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/dell.svg" alt="Dell"><span>Dell</span></div>
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/hp.svg" alt="HP"><span>HP</span></div>
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/lenovo.svg" alt="Lenovo"><span>Lenovo</span></div>
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/msibusiness.svg" alt="MSI"><span>MSI</span></div>
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/acer.svg" alt="Acer"><span>Acer</span></div>
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/asus.svg" alt="Asus"><span>Asus</span></div>
+      <div class="brand-tile reveal"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/apple.svg" alt="MacBook"><span>MacBook</span></div>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:var(--muted);font-size:.9rem">+ Samsung · Sony · Toshiba · LG · Microsoft Surface · and more</p>
+  </div>
+</section>
+
+<section id="amc" style="padding-top:0">
+  <div class="container">
+    <div class="amc reveal">
+      <div class="amc-grid">
+        <div>
+          <span class="eyebrow">Annual Maintenance Contract</span>
+          <h2 style="margin-top:14px">Worry-Free <span class="grad">AMC Plans</span> for Homes & Businesses</h2>
+          <p class="muted">Keep your laptops and computers running flawlessly all year. Our AMC covers regular servicing, priority support, and discounted repairs — perfect for offices, institutes, and power users.</p>
+          <div class="amc-features">
+            <div class="amc-feat"><span class="tick">✓</span><span>Quarterly preventive servicing</span></div>
+            <div class="amc-feat"><span class="tick">✓</span><span>Priority on-site / remote support</span></div>
+            <div class="amc-feat"><span class="tick">✓</span><span>Free diagnostics & inspections</span></div>
+            <div class="amc-feat"><span class="tick">✓</span><span>Up to 25% off on spare parts</span></div>
+            <div class="amc-feat"><span class="tick">✓</span><span>OS & antivirus updates included</span></div>
+            <div class="amc-feat"><span class="tick">✓</span><span>Data backup assistance</span></div>
+          </div>
+        </div>
+        <div class="amc-card">
+          <div class="price-l">Plans starting at</div>
+          <div class="price">₹1,499<span style="font-size:1rem;color:var(--muted);font-weight:500">/yr</span></div>
+          <div class="price-l" style="margin-top:8px">Per laptop · Custom plans for businesses</div>
+          <a href="https://wa.me/918910244177?text=Hi%2C%20I%20want%20to%20know%20about%20your%20AMC%20plans" target="_blank" class="btn btn-primary" style="margin-top:18px;width:100%;justify-content:center">Get AMC Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2 style="margin-top:14px">Simple, Transparent Process</h2>
+      <p>From the first call to a perfectly working laptop — four easy steps.</p>
+    </div>
+    <div class="process-grid">
+      <div class="step reveal"><div class="num">01</div><h3>Reach Out</h3><p>Call or WhatsApp us with your laptop issue — get a quick estimate.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Free Diagnosis</h3><p>Bring your device or arrange pickup. We diagnose at zero cost.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Expert Repair</h3><p>Approve the quote — our certified engineers repair with genuine parts.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3>Tested & Returned</h3><p>Full quality check, then hand-over with warranty card.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2 style="margin-top:14px">The SODEPUR LAPTOP & COMPUTER SERVICE Difference</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="ico">⚡</div><h3>Fast Turnaround</h3><p>Most repairs completed same-day or within 24 hours.</p></div>
+      <div class="why-card reveal"><div class="ico">🛡️</div><h3>Repair Warranty</h3><p>Up to 6-month warranty on parts and labour.</p></div>
+      <div class="why-card reveal"><div class="ico">💰</div><h3>Transparent Pricing</h3><p>No hidden costs. Quote upfront, pay only after approval.</p></div>
+      <div class="why-card reveal"><div class="ico">🎯</div><h3>Genuine Parts</h3><p>Only original / OEM-grade components used in every repair.</p></div>
+      <div class="why-card reveal"><div class="ico">👨‍🔧</div><h3>Expert Technicians</h3><p>10+ years of hands-on chip-level repair experience.</p></div>
+      <div class="why-card reveal"><div class="ico">🚚</div><h3>Pickup & Drop</h3><p>Doorstep collection & delivery available across North Kolkata.</p></div>
+      <div class="why-card reveal"><div class="ico">💾</div><h3>Data Safety</h3><p>Your data stays private — we follow strict confidentiality.</p></div>
+      <div class="why-card reveal"><div class="ico">⭐</div><h3>4.9★ Google Rated</h3><p>Loved by hundreds of happy customers in Sodepur & nearby.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Customer Love</span>
+      <div class="reviews-head" style="margin-top:14px">
+        <div class="big-rating">4.9</div>
+        <div style="text-align:left">
+          <div class="stars" style="font-size:1.2rem">★★★★★</div>
+          <div style="font-size:.85rem;color:var(--muted)">Based on Google Reviews</div>
+        </div>
+      </div>
+      <p>Real feedback from real customers across Sodepur, Sukchar, Khardah & Kolkata.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card review reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Excellent service! My Dell laptop screen was replaced the same day at a very fair price. Honest team and quality work — highly recommended.”</p>
+        <div class="reviewer"><div class="avatar">R</div><div class="meta"><strong>Rahul Saha</strong><span>📍 Sodepur</span></div></div>
+      </div>
+      <div class="card review reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“My HP laptop wouldn’t turn on. They did chip-level repair and brought it back to life. Genuine people, transparent pricing. 5 stars!”</p>
+        <div class="reviewer"><div class="avatar">P</div><div class="meta"><strong>Priyanka Das</strong><span>📍 Sukchar</span></div></div>
+      </div>
+      <div class="card review reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Recovered all my project data from a dead hard disk. I had given up hope — these guys are magicians. Thank you so much!”</p>
+        <div class="reviewer"><div class="avatar">S</div><div class="meta"><strong>Sourav Banerjee</strong><span>📍 Khardah</span></div></div>
+      </div>
+      <div class="card review reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Best laptop service centre in North Kolkata. Replaced my MacBook battery with original part and gave warranty. Very professional.”</p>
+        <div class="reviewer"><div class="avatar">A</div><div class="meta"><strong>Anirban Roy</strong><span>📍 Agarpara</span></div></div>
+      </div>
+      <div class="card review reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Sorted my Lenovo motherboard issue that two shops refused. Quick, affordable and trustworthy. Will surely come back for AMC.”</p>
+        <div class="reviewer"><div class="avatar">T</div><div class="meta"><strong>Tanmoy Ghosh</strong><span>📍 Panihati</span></div></div>
+      </div>
+      <div class="card review reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">“Got my office computers under AMC — zero downtime since. Their support is super responsive. Highly recommend for businesses.”</p>
+        <div class="reviewer"><div class="avatar">M</div><div class="meta"><strong>Manish Kr.</strong><span>📍 BT Road</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 style="margin-top:14px">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>How long does a typical laptop repair take?</summary><p>Most software issues, screen replacements and battery jobs are completed same-day. Chip-level motherboard work usually takes 1–3 working days.</p></details>
+      <details><summary>Do you offer pickup and delivery?</summary><p>Yes — free pickup & drop is available within Sodepur, Sukchar, Khardah, Agarpara, Panihati and nearby areas in North Kolkata.</p></details>
+      <details><summary>Do you use original spare parts?</summary><p>Absolutely. We use genuine or OEM-grade parts only and offer a warranty on every component replaced.</p></details>
+      <details><summary>What brands do you service?</summary><p>Dell, HP, Lenovo, MSI, Acer, Asus, MacBook (Apple), Samsung, Sony, Toshiba, LG, Microsoft Surface and more.</p></details>
+      <details><summary>How does the AMC plan work?</summary><p>Choose monthly, quarterly or yearly plans. We provide preventive maintenance, priority support and discounted parts for the contract duration.</p></details>
+      <details><summary>Is my data safe during repair?</summary><p>Yes — we strictly maintain customer privacy and never access personal files unless data recovery is requested.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 style="margin-top:14px">Visit, Call, or Chat With Us</h2>
+      <p>We’re here every day to help you get your laptop back to perfect shape.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="contact-row"><div class="ic">📞</div><div><strong>Call Us</strong><a href="tel:+918910244177"><span>+91 89102 44177</span></a></div></div>
+        <div class="contact-row"><div class="ic">💬</div><div><strong>WhatsApp</strong><a href="https://wa.me/918910244177" target="_blank"><span>Chat instantly — fastest reply</span></a></div></div>
+        <div class="contact-row"><div class="ic">📍</div><div><strong>Address</strong><span>204, T.N. Banerjee Road, Sukchar, Sodepur, Kolkata – 700115</span></div></div>
+        <div class="contact-row"><div class="ic">🕒</div><div><strong>Open Hours</strong><span>24 hours open all 7 days</span></div></div>
+        <div class="contact-row"><div class="ic">✉️</div><div><strong>Email</strong><a href="mailto:sodepurcomputerservice@gmail.com"><span>sodepurcomputerservice@gmail.com</span></a></div></div>
+      </div>
+      <div class="contact-card reveal" style="padding:0;overflow:hidden">
+        <iframe src="https://www.google.com/maps?q=SODEPUR+LAPTOP+%26+COMPUTER+SERVICE+Sukchar+Sodepur+Kolkata&output=embed" width="100%" height="100%" style="border:0;min-height:380px;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sodepur Laptop & Computer Service location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="cta-band reveal">
+    <h2>Ready to Get Your Laptop Repaired?</h2>
+    <p>Free diagnosis · Genuine parts · 4.9★ trusted service</p>
+    <a href="https://wa.me/918910244177?text=Hi%2C%20I%20need%20laptop%20repair%20help" target="_blank" class="btn">💬 Chat on WhatsApp Now</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-col foot-brand">
+        <div class="brand">
+          <img src="https://drive.google.com/thumbnail?id=19gQAk4Negz0nbEzm_eZZN7w6jiLEhhKB&sz=w200" alt="Logo" style="width:42px;height:42px;border-radius:10px;background:#fff;padding:4px;object-fit:contain" onerror="this.src='https://lh3.googleusercontent.com/d/19gQAk4Negz0nbEzm_eZZN7w6jiLEhhKB=w200'">
+          <div class="brand-text">
+            <strong>SODEPUR LAPTOP</strong>
+            <span>& COMPUTER SERVICE</span>
+          </div>
+        </div>
+        <p>Trusted laptop & computer repair centre in Sodepur, Kolkata. Serving Dell, HP, Lenovo, MSI, Acer, Asus, MacBook customers since over a decade.</p>
+        <div class="stars">★★★★★ <span style="color:var(--muted);font-size:.85rem">4.9 / 5 · Google Verified</span></div>
+      </div>
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#amc">AMC Plans</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Screen Replacement</a></li>
+          <li><a href="#services">Motherboard Repair</a></li>
+          <li><a href="#services">Data Recovery</a></li>
+          <li><a href="#services">Battery & Keyboard</a></li>
+          <li><a href="#services">MacBook Service</a></li>
+          <li><a href="#services">Software & OS Setup</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+918910244177">📞 +91 89102 44177</a></li>
+          <li><a href="https://wa.me/918910244177" target="_blank">💬 WhatsApp Chat</a></li>
+          <li><a href="mailto:sodepurcomputerservice@gmail.com">✉️ sodepurcomputerservice@gmail.com</a></li>
+          <li><span style="color:var(--muted);font-size:.9rem">📍 Sukchar, Sodepur, Kolkata – 700115</span></li>
+          <li><span style="color:var(--muted);font-size:.9rem">🕒 24 hours open all 7 days</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© <span id="yr"></span> SODEPUR LAPTOP & COMPUTER SERVICE. All rights reserved.</div>
+      <div>Built with ❤️ in Kolkata</div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-actions">
+  <a href="https://wa.me/918910244177?text=Hi%2C%20I%20need%20laptop%20repair%20help" target="_blank" class="fab fab-wa" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.3 31.6l7.9-2.1c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.3c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C3.5 20.5 2.7 18.3 2.7 16 2.7 8.7 8.7 2.7 16 2.7 23.3 2.7 29.3 8.7 29.3 16S23.3 28.7 16 28.7zm7.6-10c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.5.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.2.1-.5 0-.7 0-.2-.9-2.1-1.2-2.9-.3-.7-.6-.6-.9-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.4-.2-.7-.4z"/></svg>
+  </a>
+  <a href="tel:+918910244177" class="fab fab-call" aria-label="Call Now">
+    <svg viewBox="0 0 24 24" fill="#0a0a0f"><path d="M20 15.5c-1.2 0-2.5-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1C8.6 6.5 8.4 5.2 8.4 4c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z"/></svg>
+  </a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
